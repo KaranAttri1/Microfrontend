@@ -13,9 +13,6 @@ devServer:{
     }
 },
 plugins:[
-    new HtmlWebpackPlugin({
-        template:'./public/index.html'
-    }),
     new ModuleFederation({
         name:"container",
         remotes:{
