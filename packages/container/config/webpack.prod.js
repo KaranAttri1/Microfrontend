@@ -10,7 +10,6 @@ mode:'production',
 output:{
 filename:'[name].[contenthash].js'
 },
-
 plugins:[
     new ModuleFederation({
         name:"container",
