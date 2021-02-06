@@ -8,6 +8,7 @@ output:{
     filename:'[name].[contenthash].js',
     publicPath:"/auth/latest/",
 },
+
 plugins:[
 
     new ModuleFederation({
