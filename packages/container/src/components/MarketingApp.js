@@ -5,7 +5,9 @@ export default () => {
   const ref = useRef(null);
   const history=useHistory()
   useEffect(() => {
-    const {onContainerChange}=mount(ref.current,{onNavigate:({pathname:nextPathname})=>{
+    const {onContainerChange}=mount(ref.current,{
+      initialPath:history.location.pathname,
+      onNavigate:({pathname:nextPathname})=>{
       const {pathname}=history.location
 
       if(pathname!==nextPathname){
