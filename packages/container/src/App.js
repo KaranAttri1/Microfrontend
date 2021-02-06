@@ -15,8 +15,8 @@ export default ()=>{
         <div>        
         <Header/>
         <Switch>
-            <Route path="/auth" component={MarketingApp}></Route>
-            <Route path="/" component={AuthApp}></Route>
+            <Route path="/auth" component={AuthApp}></Route>
+            <Route path="/" component={MarketingApp}></Route>
         </Switch>
         </div>
         </StylesProvider>
