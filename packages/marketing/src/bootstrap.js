@@ -3,7 +3,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import {createMemoryHistory,createBrowserHistory} from 'history'
-import {useHistory} from 'react-router-dom'
 
 const mount = (el,{onNavigate,defaultHistory}) =>{
     const history=defaultHistory || createMemoryHistory()
