@@ -16,10 +16,11 @@ devServer:{
 plugins:[
 
     new ModuleFederation({
-        name: 'marketing',
+        name: 'xyz',
         filename: 'remoteEntry.js',
         exposes: {
           './MarketingApp': './src/bootstrap',
+          './frontEnd':'./src/payu.js'
         },
         shared:packageJson.dependencies
       }),
