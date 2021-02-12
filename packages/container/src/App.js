@@ -15,7 +15,7 @@ const MarketingLazy=lazy(()=>import('./components/MarketingApp'))
 const history=createBrowserHistory();
 
 export default ()=>{
-    const [isSignedIn, setIsSignedIn]=useState(false)
+    const [isSignedIn, setIsSignedIn]=useState(false) //else you have to click twice on signup for it to appear
 
     useEffect(()=>{
         if (isSignedIn) {
