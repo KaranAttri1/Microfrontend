@@ -84,7 +84,7 @@ const tiers = [
     buttonVariant: 'outlined',
   },
   {
-    title: 'Pro',
+    title: 'PayU Money',
     subheader: 'Most popular',
     price: '15',
     description: [
@@ -97,7 +97,7 @@ const tiers = [
     buttonVariant: 'contained',
   },
   {
-    title: 'Enterprise',
+    title: 'PayUBiz Enterprise',
     price: '30',
     description: [
       '50 users included',
@@ -162,8 +162,7 @@ export default function Pricing() {
           component="p"
         >
           Quickly build an effective pricing table for your potential customers
-          with this layout. It&apos;s built with default Material-UI components
-          with little customization.
+          with this layout. 
         </Typography>
       </Container>
       {/* End hero unit */}
@@ -190,7 +189,7 @@ export default function Pricing() {
                 <CardContent>
                   <div className={classes.cardPricing}>
                     <Typography component="h2" variant="h3" color="textPrimary">
-                      ${tier.price}
+                      Rs.{tier.price}
                     </Typography>
                     <Typography variant="h6" color="textSecondary">
                       /mo

@@ -87,9 +87,13 @@ export default function Album() {
               color="textSecondary"
               paragraph
             >
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              Welcome Guys! 
+              <br/>
+              Wassup Gaurav! 
+              <br/>
+              Hey Vivek, How u doin? 
+              <br/>
+              Mayank, Good to see you man...
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
@@ -127,8 +131,7 @@ export default function Album() {
                       Heading
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
+                      Describe here!
                     </Typography>
                   </CardContent>
                   <CardActions>

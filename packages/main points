@@ -1,0 +1,61 @@
+- [ ] SPA: turn monolithic spa to microfrontend
+
+- [ ] Micro Front end :
+Purpose oriented teams
+Diffrent teams to handle, different technology
+
+- [ ] Module Fed
+Motivation
+Multiple separate builds should form a single application. These separate builds should not have dependencies between each other, so they can be developed and deployed individually.
+This is often known as Micro-Frontends, but is not limited to that.
+
+Host-> remote
+||
+V
+remote
+
+Host: what all files to fetch 
+Remote: what all files to expose
+
+
+In host, refactor entry point to load asynchronous
+In host, import whatever files u need from remote
+
+
+- [ ] Index and bootstrap
+Well, this really gives web pack the opportunity to realize that before executing that bootstrap JS
+file, we have to go and fetch some code from the products project.
+That's what the index file is for.
+It is just to allow Webpack that opportunity to go and get some additional JavaScript and make sure
+that we've got the project code or the products code ready along with the faker code ready as well
+before we try to actually do something with it when we actually execute the contents of the bootstrap JS file.
+
+
+- [ ] Explain app architecture:
+
+Container- : marketing, auth, dashboard(vue.js)
+Rules of integration:
+
+
+- [ ] Dev mode prod mode:
+Each project must work with container and individually 
+
+- [ ] Css in js
+css scoping : css that affects only one project-> css in js library
+<h1>. But in css in js <h1 class=“h1_j1k”>
+
+In prod it is jss1,jss2 -> so not random -> it does so bcz it wants to make css as small as possible-> but this issue doesn’t arise in dev
+
+One way is to write css as auth h1{} I.e with a root element
+Issues with using shared bootstrap lib, if in future one team updates version then there may be problems
+
+
+- [ ] Navigation-browser history and memory history
+Browser history for container and memory for rest
+2 way communication:
+Marketing to container: onNavigate
+Container to marketing: onContainerChange
+
+initialPath  (in case of auth )
+- [ ] Dashboard: Dashboard App
+- [ ] AWS config
